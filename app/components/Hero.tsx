@@ -18,29 +18,84 @@ import {
 
 export default function Hero() {
   const technologies = [
-    { name: "Next.js", icon: SiNextdotjs, color: "hover:text-white" },
-    { name: "React", icon: FaReact, color: "hover:text-[#61DAFB]" },
-    { name: "TypeScript", icon: SiTypescript, color: "hover:text-[#3178C6]" },
-    { name: "Tailwind CSS", icon: SiTailwindcss, color: "hover:text-[#06B6D4]" },
-    { name: "Node.js", icon: FaNode, color: "hover:text-[#339933]" },
-    { name: "Python", icon: FaPython, color: "hover:text-[#3776AB]" },
-    { name: "PHP", icon: FaPhp, color: "hover:text-[#777BB4]" },
-    { name: "WordPress", icon: FaWordpress, color: "hover:text-[#21759B]" },
-    { name: "Shopify", icon: FaShopify, color: "hover:text-[#7AB55C]" },
-    { name: "Figma", icon: SiFigma, color: "hover:text-[#F24E1E]" },
-    { name: "Photoshop", icon: SiAdobephotoshop, color: "hover:text-[#31A8FF]" },
+    { 
+      name: "Next.js", 
+      icon: SiNextdotjs, 
+      color: "hover:text-white",
+      bgColor: "bg-black/10 text-white hover:bg-black/20"
+    },
+    { 
+      name: "React", 
+      icon: FaReact, 
+      color: "hover:text-[#61DAFB]",
+      bgColor: "bg-[#61DAFB]/10 text-[#61DAFB] hover:bg-[#61DAFB]/20"
+    },
+    { 
+      name: "TypeScript", 
+      icon: SiTypescript, 
+      color: "hover:text-[#3178C6]",
+      bgColor: "bg-[#3178C6]/10 text-[#3178C6] hover:bg-[#3178C6]/20"
+    },
+    { 
+      name: "Tailwind CSS", 
+      icon: SiTailwindcss, 
+      color: "hover:text-[#06B6D4]",
+      bgColor: "bg-[#06B6D4]/10 text-[#06B6D4] hover:bg-[#06B6D4]/20"
+    },
+    { 
+      name: "Node.js", 
+      icon: FaNode, 
+      color: "hover:text-[#339933]",
+      bgColor: "bg-[#339933]/10 text-[#339933] hover:bg-[#339933]/20"
+    },
+    { 
+      name: "Python", 
+      icon: FaPython, 
+      color: "hover:text-[#3776AB]",
+      bgColor: "bg-[#3776AB]/10 text-[#3776AB] hover:bg-[#3776AB]/20"
+    },
+    { 
+      name: "PHP", 
+      icon: FaPhp, 
+      color: "hover:text-[#777BB4]",
+      bgColor: "bg-[#777BB4]/10 text-[#777BB4] hover:bg-[#777BB4]/20"
+    },
+    { 
+      name: "WordPress", 
+      icon: FaWordpress, 
+      color: "hover:text-[#21759B]",
+      bgColor: "bg-[#21759B]/10 text-[#21759B] hover:bg-[#21759B]/20"
+    },
+    { 
+      name: "Shopify", 
+      icon: FaShopify, 
+      color: "hover:text-[#7AB55C]",
+      bgColor: "bg-[#7AB55C]/10 text-[#7AB55C] hover:bg-[#7AB55C]/20"
+    },
+    { 
+      name: "Figma", 
+      icon: SiFigma, 
+      color: "hover:text-[#F24E1E]",
+      bgColor: "bg-[#F24E1E]/10 text-[#F24E1E] hover:bg-[#F24E1E]/20"
+    },
+    { 
+      name: "Photoshop", 
+      icon: SiAdobephotoshop, 
+      color: "hover:text-[#31A8FF]",
+      bgColor: "bg-[#31A8FF]/10 text-[#31A8FF] hover:bg-[#31A8FF]/20"
+    },
   ];
 
   return (
     <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-background">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mx-4">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
               Hi, I'm <span className="text-blue-500">Bradley Lewis</span>
             </h1>
             <p className="text-xl md:text-2xl text-foreground">
-              A Full Stack Developer passionate about building web applications that make a difference.
+              A Full Stack Developer passionate about building web applications that make a difference. Based in Adelaide, Australia.
             </p>
             <div className="space-y-6">
               <div className="flex gap-4">
@@ -55,7 +110,7 @@ export default function Hero() {
                 {technologies.map((tech, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-blue-500/10 text-blue-500 rounded-full text-sm flex items-center gap-2 hover:bg-blue-500/20 transition-all duration-300"
+                    className={`px-3 py-1 rounded-full text-sm flex items-center gap-2 transition-all duration-300 ${tech.bgColor}`}
                   >
                     <tech.icon className={`w-5 h-5 transition-colors duration-300 ${tech.color}`} />
                     {tech.name}

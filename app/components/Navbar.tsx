@@ -7,9 +7,6 @@ export default function Navbar() {
         <div className="flex justify-end items-center h-16">
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-white/70 hover:text-white transition">
-              Home
-            </Link>
             <Link href="/projects" className="text-white/70 hover:text-white transition">
               Projects
             </Link>
