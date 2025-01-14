@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { 
   FaReact, 
   FaNode, 
-  FaPython,
   FaPhp,
   FaWordpress,
   FaShopify,
@@ -49,12 +48,6 @@ export default function Hero() {
       bgColor: "bg-[#339933]/10 text-[#339933] hover:bg-[#339933]/20"
     },
     { 
-      name: "Python", 
-      icon: FaPython, 
-      color: "hover:text-[#3776AB]",
-      bgColor: "bg-[#3776AB]/10 text-[#3776AB] hover:bg-[#3776AB]/20"
-    },
-    { 
       name: "PHP", 
       icon: FaPhp, 
       color: "hover:text-[#777BB4]",
@@ -87,8 +80,8 @@ export default function Hero() {
   ];
 
   return (
-    <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-background">
-      <div className="container mx-auto px-4 py-12">
+    <section className="min-h-[calc(100vh-4rem)] flex items-center justify-center bg-background pt-10 md:pt-32">
+      <div className="container mx-auto px-4 py-4 md:py-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mx-4">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
