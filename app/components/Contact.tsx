@@ -49,7 +49,7 @@ export default function Contact() {
           
           <div className="space-y-8">
             <p className="text-white/80 text-center text-lg">
-              I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+              I&apos;m always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
