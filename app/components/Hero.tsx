@@ -135,7 +135,7 @@ export default function Hero() {
             <div className="aspect-square rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 opacity-20 absolute -z-10 blur-3xl"></div>
             <div className="w-[400px] h-[400px] relative">
               <Image
-                src="/profile.jpg"
+                src="/pictures/profile.JPG"
                 alt="Profile picture"
                 fill
                 style={{ objectFit: 'cover', objectPosition: 'center', borderRadius: '50rem' }}
