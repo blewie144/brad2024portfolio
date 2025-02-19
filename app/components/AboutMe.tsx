@@ -10,15 +10,15 @@ export default function AboutMe() {
           </h2>
           <div className="space-y-6 text-white/80 text-center">
             <p className="text-lg">
-              I'm a Full Stack Developer specializing in Shopify development and custom e-commerce solutions. With extensive experience working with agencies, I've helped numerous businesses scale their online presence through custom Shopify themes and applications.
+              I&apos;m a Full Stack Developer specializing in Shopify development and custom e-commerce solutions. With extensive experience working with agencies, I&apos;ve helped numerous businesses scale their online presence through custom Shopify themes and applications.
             </p>
             
             <p className="text-lg">
-              My journey began with Developing Wordpress themes and then moved to specializing in Shopify theme development, which evolved into creating custom applications and integrations. I've worked with leading agencies to deliver tailored e-commerce solutions that combine powerful functionality with exceptional user experiences.
+              My journey began with Developing Wordpress themes and then moved to specializing in Shopify theme development, which evolved into creating custom applications and integrations. I&apos;ve worked with leading agencies to deliver tailored e-commerce solutions that combine powerful functionality with exceptional user experiences.
             </p>
             
             <p className="text-lg">
-              Today, I leverage modern technologies like Next.js, React, and Node.js alongside Shopify's and the wordpress ecosystem to build scalable e-commerce solutions. My expertise spans from custom theme development to complex app integrations, helping businesses achieve their online retail goals.
+              Today, I leverage modern technologies like Next.js, React, and Node.js alongside Shopify&apos;s and the wordpress ecosystem to build scalable e-commerce solutions. My expertise spans from custom theme development to complex app integrations, helping businesses achieve their online retail goals.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">

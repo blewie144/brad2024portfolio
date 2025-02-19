@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -29,7 +29,7 @@ export default function Contact() {
         isError: false,
       });
       (e.target as HTMLFormElement).reset();
-    } catch (error) {
+    } catch (error: any) { // eslint-disable-line @typescript-eslint/no-unused-vars
       setSubmitStatus({
         message: 'Failed to send message. Please try again.',
         isError: true,
