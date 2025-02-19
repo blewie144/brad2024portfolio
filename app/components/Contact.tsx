@@ -29,7 +29,7 @@ export default function Contact() {
         isError: false,
       });
       (e.target as HTMLFormElement).reset();
-    } catch (error: any) { // eslint-disable-line @typescript-eslint/no-unused-vars
+    } catch (error: unknown) {
       setSubmitStatus({
         message: 'Failed to send message. Please try again.',
         isError: true,

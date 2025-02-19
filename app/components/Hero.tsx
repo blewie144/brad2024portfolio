@@ -98,7 +98,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mx-4">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-              Hi, I'm <span className="text-blue-500">Bradley Lewis</span>
+              Hi, I&apos;m <span className="text-blue-500">Bradley Lewis</span>
             </h1>
             <p className="text-xl md:text-2xl text-foreground">
               A Full Stack Developer passionate about building web applications that make a difference. Based in Adelaide, Australia.
