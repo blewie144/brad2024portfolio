@@ -13,6 +13,8 @@ import {
   SiNextdotjs,
   SiFigma,
   SiAdobephotoshop,
+  SiMysql,
+  SiPostgresql,
 } from 'react-icons/si';
 
 export default function Hero() {
@@ -76,6 +78,18 @@ export default function Hero() {
       icon: SiAdobephotoshop, 
       color: "hover:text-[#31A8FF]",
       bgColor: "bg-[#31A8FF]/10 text-[#31A8FF] hover:bg-[#31A8FF]/20"
+    },
+    { 
+      name: "MySQL", 
+      icon: SiMysql, 
+      color: "hover:text-[#4479A1]",
+      bgColor: "bg-[#4479A1]/10 text-[#4479A1] hover:bg-[#4479A1]/20"
+    },
+    { 
+      name: "PostgreSQL", 
+      icon: SiPostgresql, 
+      color: "hover:text-[#336791]",
+      bgColor: "bg-[#336791]/10 text-[#336791] hover:bg-[#336791]/20"
     },
   ];
 

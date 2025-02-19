@@ -7,7 +7,6 @@ import {
   FaGithub, 
   FaReact, 
   FaNode, 
-  FaPython,
   FaJs,
   FaShopify,
   FaHtml5,
@@ -102,54 +101,26 @@ export default function MyWork() {
       image: "/pictures/herbsofgold.png",
       github: "",
     },
+    // {
+    //   title: "Shopify App Placeholder",
+    //   description: "Collaborative project management tool with real-time updates",
+    //   technologies: ["React", "Node.js", "MongoDB", "Express"],
+    //   image: "https://placehold.co/600x400/1a1a1a/666666",
+    //   github: "https://github.com/yourusername/project2",
+    // },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      image: "https://placehold.co/600x400/1a1a1a/666666",
-      github: "https://github.com/yourusername/project2",
+      title: "Femme Organic",
+      description: "A Custom Shopify theme built for a client who sells organic feminine hygiene products.",
+      technologies: ["Shopify", "JavaScript", "HTML"],
+      image: "/pictures/femme.png",
+      github: "",
     },
     {
-      title: "AI Content Generator",
-      description: "AI-powered platform for generating marketing content and social media posts",
-      technologies: ["Python", "TensorFlow", "FastAPI", "React"],
-      image: "https://placehold.co/600x400/1a1a1a/666666",
-      github: "https://github.com/yourusername/project3",
-    },
-    {
-      title: "Real Estate Platform",
-      description: "Property listing and management system with virtual tour capabilities",
-      technologies: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS"],
-      image: "https://placehold.co/600x400/1a1a1a/666666",
-      github: "https://github.com/yourusername/project4",
-    },
-    {
-      title: "Social Media Dashboard",
-      description: "Analytics and management platform for multiple social media accounts",
-      technologies: ["React", "Node.js", "Express", "TypeScript"],
-      image: "https://placehold.co/600x400/1a1a1a/666666",
-      github: "https://github.com/yourusername/project5",
-    },
-    {
-      title: "Healthcare Portal",
-      description: "Patient management system with appointment scheduling and medical records",
-      technologies: ["Next.js", "Prisma", "TypeScript", "MongoDB"],
-      image: "https://placehold.co/600x400/1a1a1a/666666",
-      github: "https://github.com/yourusername/project6",
-    },
-    {
-      title: "Learning Management System",
-      description: "Educational platform with course creation and student progress tracking",
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      image: "https://placehold.co/600x400/1a1a1a/666666",
-      github: "https://github.com/yourusername/project7",
-    },
-    {
-      title: "Financial Dashboard",
-      description: "Real-time financial data visualization and analysis platform",
-      technologies: ["Next.js", "TypeScript", "Prisma", "FastAPI"],
-      image: "https://placehold.co/600x400/1a1a1a/666666",
-      github: "https://github.com/yourusername/project8",
+      title: "React Weather API",
+      description: "A weather app built with React and TypeScript. Communicates with the OpenWeather API to fetch weather data.",
+      technologies: ["React", "TypeScript"],
+      image: "/pictures/weather.png",
+      github: "https://github.com/blewie144/reactweatherapp",
     }
   ];
 
@@ -204,15 +175,16 @@ export default function MyWork() {
                     {project.title}
                   </h3>
                   
-                  <a 
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-white hover:text-white/80 transition-colors"
-                  >
-                    <FaGithub className="w-6 h-6" />
-                  </a>
-
+                  {project.github && project.github !== "" && (
+                    <a 
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white hover:text-white/80 transition-colors"
+                    >
+                      <FaGithub className="w-6 h-6" />
+                    </a>
+                  )}
                 </div>
                 <p className="text-foreground mb-4">
                   {project.description}
