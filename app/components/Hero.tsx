@@ -106,12 +106,18 @@ export default function Hero() {
             </p>
             <div className="space-y-6">
               <div className="flex gap-4">
-                <button className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+                <a 
+                  href="#mywork" 
+                  className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+                >
                   View Projects
-                </button>
-                <button className="px-6 py-3 bg-white text-black border border-foreground/20 rounded-lg hover:bg-foreground/5 transition">
+                </a>
+                <a 
+                  href="#contact" 
+                  className="px-6 py-3 bg-white text-black border border-foreground/20 rounded-lg hover:bg-foreground/5 transition"
+                >
                   Contact Me
-                </button>
+                </a>
               </div>
               <div className="flex flex-wrap gap-2">
                 {technologies.map((tech, index) => (

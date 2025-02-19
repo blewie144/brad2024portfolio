@@ -140,7 +140,7 @@ export default function MyWork() {
   };
 
   return (
-    <section className="py-20 bg-background">
+    <section id="mywork" className="py-20 bg-background mywork">
       <div className="container mx-auto px-4">
         <AnimatedHeader 
           title="My Work"
