@@ -29,7 +29,7 @@ export default function Contact() {
         isError: false,
       });
       (e.target as HTMLFormElement).reset();
-    } catch (error: unknown) {
+    } catch (_error) {
       setSubmitStatus({
         message: 'Failed to send message. Please try again.',
         isError: true,
