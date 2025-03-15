@@ -107,7 +107,7 @@ export default function Contact() {
 
             <div className="flex justify-center gap-8 pt-8 border-t border-foreground/10">
               <a 
-                href="https://github.com/yourusername" 
+                href="https://github.com/blewie144/brad2024portfolio" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition"
@@ -115,7 +115,7 @@ export default function Contact() {
                 <FaGithub className="w-6 h-6" />
               </a>
               <a 
-                href="https://linkedin.com/in/yourusername" 
+                href="https://www.linkedin.com/in/bradley-lewis-a23756336/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition"
