@@ -107,7 +107,7 @@ export default function Contact() {
 
             <div className="flex justify-center gap-8 pt-8 border-t border-foreground/10">
               <a 
-                href="https://github.com/blewie144/brad2024portfolio" 
+                href="https://github.com/blewie144" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/70 hover:text-white transition"
